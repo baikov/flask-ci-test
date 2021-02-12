@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import request, jsonify
-#1
+
 app = Flask(__name__)
 
 def validate_post_data(data: dict) -> bool:
