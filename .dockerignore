@@ -1,0 +1,9 @@
+flask-ci
+.vscode/
+.DS_Store
+static/
+media/
+README.md
+ci_app/
+.idea/
+*.pyc
