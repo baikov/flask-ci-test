@@ -1,11 +1,3 @@
-# FROM python:alpine3.13
-# COPY . /app
-# WORKDIR /app
-# RUN pip install -r requirements.txt
-# EXPOSE 5000
-# ENTRYPOINT [ "python" ]
-# CMD [ "app.py" ]
-
 # Берем нужный базовый образ
 FROM python:3.8-alpine
 # Копируем все файлы из текущей директории в /app контейнера
@@ -17,7 +9,7 @@ RUN pip install -e /app
 # Говорим контейнеру какой порт слушай
 EXPOSE 8080
 # Запуск нашего приложения при старте контейнера
-CMD web_server
+# CMD web_server
 
 # В качестве альтернативы distutils можно просто указать что выполнить
-#CMD python /app/src/app.py
+CMD python /app/src/app.py
